@@ -1,67 +1,83 @@
-/* styles.css atualizado */
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezzy3 - Impulsione seu Crescimento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🔥 REZZY3 - IMPULSIONE SEU CRESCIMENTO 🔥</h1>
+    </header>
+    
+    <section id="video-background">
+        <iframe id="video" src="https://www.youtube.com/embed/D_0d2kY7lP4?autoplay=1&mute=1&loop=1&playlist=D_0d2kY7lP4" frameborder="0" allowfullscreen></iframe>
+        <button id="unmute-button">🔊 Ativar Som</button>
+    </section>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #141414;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
+    <section id="intro">
+        <p>Transforme sua presença online em um servidor exclusivo!</p>
+    </section>
+    
+    <section id="planos">
+        <h2>💡 Escolha seu Pacote 💡</h2>
+        <div class="plano">
+            <h3>📦 Pacote Iniciante</h3>
+            <p>Acesso básico + suporte</p>
+            <a href="https://www.instagram.com/seuperfil" class="botao instagram">Acessar</a>
+        </div>
+        <div class="plano">
+            <h3>📦 Pacote Avançado</h3>
+            <p>Suporte VIP + Aulas Extras</p>
+            <a href="https://www.instagram.com/seuperfil" class="botao instagram">Acessar</a>
+        </div>
+        <div class="plano premium">
+            <h3>👑 Pacote Premium</h3>
+            <p>Suporte VIP + Aulas Extras + Call semanal</p>
+            <a href="https://wa.me/seunumerowhatsapp" class="botao whatsapp">Acessar</a>
+        </div>
+    </section>
+    
+    <section id="tabela-precos">
+        <h2>📊 Planos e Benefícios 📊</h2>
+        <table>
+            <tr>
+                <th>📦 Pacote</th>
+                <th>🎁 Benefícios</th>
+                <th>💰 Preço</th>
+            </tr>
+            <tr>
+                <td>Iniciante</td>
+                <td>Acesso básico + suporte</td>
+                <td>R$ 50</td>
+            </tr>
+            <tr>
+                <td>Avançado</td>
+                <td>Suporte VIP + Aulas Extras</td>
+                <td>R$ 100</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>Suporte VIP + Aulas Extras + Call semanal</td>
+                <td>R$ 150</td>
+            </tr>
+        </table>
+    </section>
+    
+    <footer>
+        <p>📢 Acompanhe no YouTube</p>
+        <a href="https://www.youtube.com/seucanal" class="botao youtube">YouTube</a>
+        <a href="https://www.instagram.com/seuperfil" class="botao instagram">Instagram</a>
+        <a href="https://wa.me/seunumerowhatsapp" class="botao whatsapp">WhatsApp</a>
+        <p>© 2025 REZZY3 - Todos os direitos reservados</p>
+    </footer>
 
-header {
-    background-color: #e50914;
-    padding: 20px;
-}
-
-h1, h2 {
-    margin: 10px 0;
-}
-
-#planos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.plano {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-}
-
-.botao {
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-}
-
-.instagram { background-color: #C13584; }
-.whatsapp { background-color: #25D366; }
-.youtube { background-color: #FF0000; }
-
-/* Ajuste para tabela centralizada e espaçada */
-#tabela-precos {
-    margin: 40px auto;
-    width: 80%;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-th, td {
-    padding: 15px;
-    border: 1px solid #444;
-}
-
-th {
-    background-color: #e50914;
-}
+    <script>
+        document.getElementById("unmute-button").addEventListener("click", function() {
+            let video = document.getElementById("video");
+            video.src = "https://www.youtube.com/embed/D_0d2kY7lP4?autoplay=1&mute=0&loop=1&playlist=D_0d2kY7lP4";
+        });
+    </script>
+</body>
+</html>
